@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active hr{
+  display: block;
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.Toastify__toast-container {
+  margin-top: 46px;
+}
+@media (max-width:640px) {
+a.active{ 
+  color: white;
+  background-color: black;
+}  
+}
