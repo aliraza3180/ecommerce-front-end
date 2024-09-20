@@ -3,6 +3,9 @@ import { assets } from "../assets/assets";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
+  const handleClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
   return (
     <div>
       <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] text-sm gap-14 my-10 mt-40">
@@ -20,16 +23,16 @@ const Footer = () => {
           <p className="text-xl font-medium mb-5">COMPANY</p>
           <ul className="flex flex-col gap-1 text-gray-600">
             <li>
-              <NavLink id="custom-link" to="/">Home</NavLink>
+              <NavLink id="custom-link" onClick={handleClick} to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink id="custom-link" to="/about">About Us</NavLink>
+              <NavLink id="custom-link" onClick={handleClick} to="/about">About Us</NavLink>
             </li>
             <li>
-              <NavLink id="custom-link" to="/">Privacy Policy</NavLink>
+              <NavLink id="custom-link" onClick={handleClick} to="/">Privacy Policy</NavLink>
             </li>
             <li>
-              <NavLink id="custom-link" to="/">Delivery</NavLink>
+              <NavLink id="custom-link" onClick={handleClick} to="/">Delivery</NavLink>
             </li>
           </ul>
         </div>
