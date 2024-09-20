@@ -22,16 +22,16 @@ const Footer = () => {
         <div>
           <p className="text-xl font-medium mb-5">COMPANY</p>
           <ul className="flex flex-col gap-1 text-gray-600">
-            <li>
-              <NavLink id="custom-link" onClick={handleClick} to="/">Home</NavLink>
+            <li  onClick={handleClick}>
+              <NavLink id="custom-link" to="/">Home</NavLink>
             </li>
-            <li>
-              <NavLink id="custom-link" onClick={handleClick} to="/about">About Us</NavLink>
+            <li onClick={handleClick}>
+              <NavLink id="custom-link" to="/about">About Us</NavLink>
             </li>
-            <li>
-              <NavLink id="custom-link" onClick={handleClick} to="/">Privacy Policy</NavLink>
+            <li onClick={handleClick}>
+              <NavLink id="custom-link" to="/">Privacy Policy</NavLink>
             </li>
-            <li>
+            <li onClick={handleClick}>
               <NavLink id="custom-link" onClick={handleClick} to="/">Delivery</NavLink>
             </li>
           </ul>
